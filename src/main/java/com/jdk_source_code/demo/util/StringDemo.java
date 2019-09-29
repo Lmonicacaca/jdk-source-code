@@ -1,5 +1,7 @@
 package com.jdk_source_code.demo.util;
 
+import java.util.Arrays;
+
 /**
  * @author lilin
  * @date 2019-09-19
@@ -24,5 +26,11 @@ public class StringDemo {
     public static void main(String[] args) {
         testIsEmpty();
         testCompare();
+        String s = "143";
+        char[] chars = s.toCharArray();
+        System.out.println(chars.length);
+        chars = Arrays.copyOf(s.toCharArray(), 10);
+        System.out.println(chars.length);
+
     }
 }
