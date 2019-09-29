@@ -22,6 +22,35 @@ public class StringDemo {
         System.out.println(str.equalsIgnoreCase("1abc23"));
     }
 
+    public void judgeUserIdentity(String type){
+        switch (EnumDemo.getValue(type)){
+            case COPPER:
+                doSomething0();break;
+            case SILVER:
+                doSomething1();break;
+            case GOLD:
+                doSomething2();break;
+            case PLATINUM:
+                doSomething3();break;
+            case DIAMOND:
+                doSomething4();break;
+        }
+    }
+    public void doSomething0(){
+
+    }
+    public void doSomething1(){
+
+    }
+    public void doSomething2(){
+
+    }
+    public void doSomething3(){
+
+    }
+    public void doSomething4(){
+
+    }
 
     public static void main(String[] args) {
         testIsEmpty();
