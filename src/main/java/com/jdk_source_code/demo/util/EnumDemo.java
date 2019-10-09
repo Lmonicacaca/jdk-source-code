@@ -13,8 +13,8 @@ public enum EnumDemo {
     private String type;
     private String msg;
     EnumDemo(String type,String msg){
-        type = type;
-        msg = msg;
+        this.type = type;
+        this.msg = msg;
     }
 
     public String getType() {

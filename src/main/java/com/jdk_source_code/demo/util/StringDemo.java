@@ -8,6 +8,7 @@ import java.util.Arrays;
  * 详解String类
  */
 public class StringDemo {
+    private String name;
 
     public static void testIsEmpty(){
         String str = "fr";
@@ -37,7 +38,7 @@ public class StringDemo {
         }
     }
     public void doSomething0(){
-
+        System.out.println("COPPER");
     }
     public void doSomething1(){
 
@@ -53,13 +54,8 @@ public class StringDemo {
     }
 
     public static void main(String[] args) {
-        testIsEmpty();
-        testCompare();
-        String s = "143";
-        char[] chars = s.toCharArray();
-        System.out.println(chars.length);
-        chars = Arrays.copyOf(s.toCharArray(), 10);
-        System.out.println(chars.length);
+        StringDemo stringDemo = new StringDemo();
+        stringDemo.judgeUserIdentity("COPPER");
 
     }
 }
