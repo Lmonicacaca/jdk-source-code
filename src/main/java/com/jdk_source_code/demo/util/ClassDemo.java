@@ -14,17 +14,27 @@ public class ClassDemo {
     public static void main(String[] args) {
         try {
             Class clazz = Class.forName("com.jdk_source_code.demo.util.StringDemo");
+            System.out.println(clazz.getName());//com.jdk_source_code.demo.util.StringDemo
+            System.out.println(clazz.getSimpleName());//StringDemo
             Method method = clazz.getDeclaredMethod("judgeUserIdentity", String.class);
-            method.invoke(clazz.newInstance(),"COPPER");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
+            method.invoke(clazz.newInstance(),"COPPER");//COPPER
+            System.out.println(clazz.isInterface());//false
+            System.out.println(clazz.isAnnotation());//false
+            Method[] methods = clazz.getDeclaredMethods();
+            for(Method item:methods){
+                System.out.println(item);
+            }
+            /**
+             * public void com.jdk_source_code.demo.util.StringDemo.judgeUserIdentity(java.lang.String)
+             * public static void com.jdk_source_code.demo.util.StringDemo.testIsEmpty()
+             * public void com.jdk_source_code.demo.util.StringDemo.doSomething0()
+             * public void com.jdk_source_code.demo.util.StringDemo.doSomething1()
+             * public void com.jdk_source_code.demo.util.StringDemo.doSomething2()
+             * public static void com.jdk_source_code.demo.util.StringDemo.testCompare()
+             * public void com.jdk_source_code.demo.util.StringDemo.doSomething3()
+             * public void com.jdk_source_code.demo.util.StringDemo.doSomething4()
+             */
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

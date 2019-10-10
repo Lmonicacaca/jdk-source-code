@@ -41,21 +41,16 @@ public class StringDemo {
         System.out.println("COPPER");
     }
     public void doSomething1(){
-
+        System.out.println("SILVER");
     }
     public void doSomething2(){
-
+        System.out.println("GOLD");
     }
     public void doSomething3(){
-
+        System.out.println("PLATINUM");
     }
     public void doSomething4(){
-
+        System.out.println("DIAMOND");
     }
 
-    public static void main(String[] args) {
-        StringDemo stringDemo = new StringDemo();
-        stringDemo.judgeUserIdentity("COPPER");
-
-    }
 }
