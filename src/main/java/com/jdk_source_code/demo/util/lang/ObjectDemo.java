@@ -1,4 +1,4 @@
-package com.jdk_source_code.demo.util;
+package com.jdk_source_code.demo.util.lang;
 
 import lombok.Data;
 

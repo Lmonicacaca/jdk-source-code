@@ -1,4 +1,4 @@
-package com.jdk_source_code.demo.util;
+package com.jdk_source_code.demo.util.lang;
 
 import com.jdk_source_code.demo.dao.database1.UserMapper;
 import com.jdk_source_code.demo.domain.UserDO;

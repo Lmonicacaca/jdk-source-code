@@ -1,6 +1,4 @@
-package com.jdk_source_code.demo.util;
-
-import java.util.Arrays;
+package com.jdk_source_code.demo.util.lang;
 
 /**
  * @author lilin

@@ -12,10 +12,10 @@ public class ClassLoaderDemoTest {
     @Test
     public void testClassLoaderDemo(){
         try {
-            Class clazz = Class.forName("com.jdk_source_code.demo.util.ClassLoaderDemo");
+            Class clazz = Class.forName("com.jdk_source_code.demo.util.lang.ClassLoaderDemo");
             System.out.println("########以下是采用类加载类加载类########");
             ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
-            systemClassLoader.loadClass("com.jdk_source_code.demo.util.ClassLoaderDemo");
+            systemClassLoader.loadClass("com.jdk_source_code.demo.util.lang.ClassLoaderDemo");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
