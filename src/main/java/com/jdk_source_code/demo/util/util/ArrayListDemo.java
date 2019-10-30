@@ -1,5 +1,7 @@
 package com.jdk_source_code.demo.util.util;
 
+import com.jdk_source_code.demo.util.entity.User;
+
 import java.util.*;
 
 /**
@@ -23,6 +25,39 @@ public class ArrayListDemo {
        System.out.println(list.remove("aaa"));
        System.out.println(list);
         System.out.println(list.subList(0,2));
+
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(42);
+        list2.add(543);
+        list2.add(1);
+        list2.add(21);
+        Collections.sort(list2);
+        Collections.reverse(list2);
+        System.out.println(list2);
+
+        List<User> listUser = new ArrayList<>();
+        User user1 = new User("李四",29);
+        User user2 = new User("张三",18);
+        User user3 = new User("王五",30);
+        User user4 = new User("李天一",40);
+        listUser.add(user1);
+        listUser.add(user2);
+        listUser.add(user3);
+        listUser.add(user4);
+        Collections.sort(listUser, new Comparator<User>() {
+            @Override
+            public int compare(User o1, User o2) {
+                if(o1.getAge()>o2.getAge()){
+                    return 1;
+                }
+                if(o1.getAge()<o2.getAge()){
+                    return -1;
+                }
+                return 0;
+            }
+        });
+
+        System.out.println(listUser);
 
     }
 }
