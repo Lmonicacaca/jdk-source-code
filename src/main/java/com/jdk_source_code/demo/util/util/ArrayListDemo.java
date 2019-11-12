@@ -31,6 +31,8 @@ public class ArrayListDemo {
         list2.add(543);
         list2.add(1);
         list2.add(21);
+        list.addAll(list2);
+        System.out.println(list);
         Collections.sort(list2);
         Collections.reverse(list2);
         System.out.println(list2);
