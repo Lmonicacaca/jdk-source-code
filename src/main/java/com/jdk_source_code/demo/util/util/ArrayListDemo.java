@@ -1,7 +1,9 @@
 package com.jdk_source_code.demo.util.util;
 
 import com.jdk_source_code.demo.util.entity.User;
+import com.jdk_source_code.demo.util.lang.DoubleDemo;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -60,6 +62,23 @@ public class ArrayListDemo {
         });
 
         System.out.println(listUser);
+
+        System.out.println("business_id".compareTo("business"));
+
+        String change = "-10";
+        String type = change.substring(0,1);
+        System.out.println(type);
+        String amount = change.substring(1);
+        System.out.println(amount);
+
+
+        String time = "1573812266.900536";
+        double timeD = new Double(time);
+        timeD = timeD*1000;
+        long date = (long)timeD;
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String format1 = format.format(date);
+        System.out.println(format1);
 
     }
 }
