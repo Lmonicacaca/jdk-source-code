@@ -1,6 +1,6 @@
 package com.jdk_source_code.demo;
 
-import com.jdk_source_code.demo.util.util.ThreadPoolExecutorDemo;
+import com.jdk_source_code.demo.util.util.concurrent.ThreadPoolExecutorDemo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

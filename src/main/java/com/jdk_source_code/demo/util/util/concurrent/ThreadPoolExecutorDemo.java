@@ -1,4 +1,4 @@
-package com.jdk_source_code.demo.util.util;
+package com.jdk_source_code.demo.util.util.concurrent;
 
 import org.springframework.stereotype.Component;
 
